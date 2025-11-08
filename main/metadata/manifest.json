@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "NEXUS",
+    "version": "1.0.0",
+    "description": "A cyberpunk-inspired Firefox theme with glowing neon colors, holographic glass UI and animated backgrounds.",
+    "author": "yok1rai",
+    "homepage_url": "https://github.com/yok1rai/NEXUS",
+    "theme": {
+        "colors": {
+            "frame": "#0b0d16",
+            "tab_background_text": "#e6e6fa",
+            "tab_line": "#ff00ff",
+            "toolbar": "#141629",
+            "toolbar_text": "#00ffff",
+            "toolbar_field": "#0b0d16",
+            "toolbar_field_text": "#ff00ff",
+            "tab_selected": "#0b0d16",
+            "button_background_active": "#00ffff",
+            "button_background_hover": "#ff00ff33",
+            "popup": "#0b0d16",
+            "popup_text": "#e6e6fa",
+            "popup_border": "#ff00ff"
+        },
+        "images": {
+            "theme_frame": "images/cyberpunk.gif",
+            "additional_backgrounds": [
+                "images/overlay_glow.png",
+                "images/grid_overlay.png"
+            ]
+        },
+        "properties": {
+            "additional_backgrounds_alignment": ["center top", "center center"],
+            "additional_backgrounds_tiling": ["no-repeat", "repeat"]
+        }
+    }
+}

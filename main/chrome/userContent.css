@@ -1,0 +1,234 @@
+/* ──────────────────────────────────────────────────────
+   ⚡ CYBERPUNK NEXUS v1.0 — New Tab Experience
+   Neural Network Terminal | Holographic Interface
+   ────────────────────────────────────────────────────── */
+
+@-moz-document url("about:newtab"), url("about:home") {
+
+    /* 🌌 Cyberpunk Animated Background (GIF) */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url("images/cyberpunk.gif") center/cover no-repeat fixed;
+        opacity: 0.35;
+        filter: blur(2px) brightness(0.8);
+        z-index: -10;
+    }
+
+    /* 🌌 Quantum Background - Multi-layered Hologram */
+    body {
+        background:
+            radial-gradient(circle at 20% 30%, #050510 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, #0b0d16 0%, transparent 50%),
+            radial-gradient(circle at 40% 80%, #141629 0%, transparent 60%),
+            linear-gradient(135deg, #050510 0%, #0b0d16 50%, #141629 100%) !important;
+
+        background-image:
+            radial-gradient(ellipse at 25% 40%, rgba(255, 0, 255, 0.12) 0%, transparent 60%),
+            radial-gradient(ellipse at 75% 25%, rgba(0, 255, 255, 0.1) 0%, transparent 55%),
+            radial-gradient(ellipse at 50% 70%, rgba(180, 38, 255, 0.08) 0%, transparent 65%),
+            radial-gradient(ellipse at 10% 10%, rgba(255, 213, 0, 0.05) 0%, transparent 70%) !important;
+
+        color: var(--fg-primary, #e6e6fa) !important;
+        overflow: hidden !important;
+        font-family: "JetBrains Mono", monospace !important;
+        position: relative;
+    }
+
+    /* 🔥 Neural Pulse Animation */
+    @keyframes neuralPulse {
+
+        0%,
+        100% {
+            box-shadow:
+                0 0 20px #ff00ff66,
+                0 0 40px #00ffff44,
+                0 0 60px #b026ff33,
+                inset 0 0 20px #00ffff22;
+        }
+
+        50% {
+            box-shadow:
+                0 0 30px #ff00ffaa,
+                0 0 50px #00ffff88,
+                0 0 70px #b026ff66,
+                inset 0 0 30px #00ffff44;
+        }
+    }
+
+    /* ⚡ Data Stream Animation */
+    @keyframes dataStream {
+        0% {
+            background-position: -200% 0;
+        }
+
+        100% {
+            background-position: 200% 0;
+        }
+    }
+
+    /* 🧭 Search Container - Command Terminal */
+    .search-inner-wrapper {
+        background: rgba(15, 18, 35, 0.85) !important;
+        border: 1px solid #ff00ff !important;
+        border-radius: 16px !important;
+        backdrop-filter: blur(25px) saturate(180%);
+        box-shadow:
+            0 0 25px #ff00ff88,
+            0 0 15px #00ffff66,
+            inset 0 0 20px #00ffff33,
+            inset 0 0 30px #ff00ff22;
+        animation: neuralPulse 3s infinite ease-in-out;
+        transition: all 0.15s ease-in-out !important;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .search-inner-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg,
+                transparent,
+                rgba(0, 255, 255, 0.2),
+                rgba(255, 0, 255, 0.2),
+                transparent);
+        animation: dataStream 2s infinite linear;
+    }
+
+    .search-inner-wrapper:hover {
+        border-color: #00ffff !important;
+        box-shadow:
+            0 0 35px #ff00ffaa,
+            0 0 25px #00ffff88,
+            0 0 15px #b026ff66,
+            inset 0 0 25px #00ffff55;
+        transform: scale(1.02) translateY(-1px);
+        animation-duration: 1.5s;
+    }
+
+    /* ⌨️ Input Field - Terminal Interface */
+    input {
+        color: #e6e6fa !important;
+        text-shadow:
+            0 0 8px #ff00ffaa,
+            0 0 12px #00ffff88 !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+        font-family: "JetBrains Mono", monospace !important;
+    }
+
+    input::placeholder {
+        color: #8688b8 !important;
+        text-shadow: 0 0 5px #8688b8 !important;
+    }
+
+    /* 🔥 Firefox Logo - Core Processor */
+    .logo {
+        filter:
+            drop-shadow(0 0 20px #ff00ff) drop-shadow(0 0 30px #00ffff) drop-shadow(0 0 40px #b026ff) brightness(1.2);
+        transform: scale(1.08);
+        transition: all 0.15s ease-in-out !important;
+    }
+
+    .logo:hover {
+        filter:
+            drop-shadow(0 0 30px #ff00ff) drop-shadow(0 0 40px #00ffff) drop-shadow(0 0 50px #b026ff) drop-shadow(0 0 60px #ff5e00) brightness(1.3);
+        transform: scale(1.12) rotate(-1deg);
+    }
+
+    /* 🌠 Holographic Grid Overlay */
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        background-image:
+            linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        animation: gridMove 20s infinite linear;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    @keyframes gridMove {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(-50px, -50px);
+        }
+    }
+
+    /* ✨ Quantum Particles */
+    body::before {
+        animation: quantumFloat 15s infinite ease-in-out alternate;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    @keyframes quantumFloat {
+
+        0%,
+        100% {
+            transform: translate(0, 0), scale(1), rotate(0deg);
+        }
+    }
+
+    /* 🎯 Top Sites - Quick Access Nodes */
+    .top-site-outer {
+        background: rgba(20, 25, 45, 0.8) !important;
+        border: 1px solid rgba(255, 0, 255, 0.3) !important;
+        border-radius: 12px !important;
+        backdrop-filter: blur(20px);
+        transition: all 0.15s ease-in-out !important;
+    }
+
+    .top-site-outer:hover {
+        background: rgba(30, 35, 60, 0.9) !important;
+        border-color: #00ffff !important;
+        box-shadow:
+            0 0 20px #ff00ff66,
+            0 0 15px #00ffff44;
+        transform: scale(1.08) translateY(-2px);
+    }
+
+    /* 📊 Content Section Enhancements */
+    .section-title {
+        color: #e6e6fa !important;
+        text-shadow: 0 0 10px #ff00ff88 !important;
+        font-weight: 600 !important;
+    }
+
+    /* ⚡ Performance Optimized Transitions */
+    * {
+        transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out,
+            border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out,
+            transform 0.15s ease-in-out !important;
+    }
+
+    /* 🛡️ Ensure Content Above Effects */
+    .search-wrapper,
+    .logo-and-wordmark,
+    .top-sites-list,
+    .section-top-sites {
+        position: relative;
+        z-index: 2;
+    }
+}
